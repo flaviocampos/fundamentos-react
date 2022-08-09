@@ -10,8 +10,9 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOrimpar from "./components/condicional/ParOrimpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
-// eslint-disable-next-line import/no-anonymous-default-export
+// eslint-disable-next-line
 export default () => {
   const tag = <strong>muito esforçado...</strong>;
   return (
@@ -22,6 +23,9 @@ export default () => {
 
         <Card titulo="#08 - Condicional" color="DarkSalmon">
           <ParOrimpar numero={21}/>
+
+          <UsuarioInfo  usuario={{nome:'Flavio'}}/>          
+          <UsuarioInfo/>
         </Card>
         
         <Card titulo="#07 - Repetição de Produtos" color="Aquamarine">
